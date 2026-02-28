@@ -1,0 +1,10 @@
+Complexidade: 2 + 1 = 3
+
+Caminho 1 (Alto): 1->2->6
+Caminho 2 (Médio): 1->3->4->6
+Caminho 3(Baixo): 1->3->5->6
+
+Tanto para C0 quanto para C1, são necessários 3 casos,
+pois, o código tem 3 returns diferentes, exclusivos,
+e se a gente quer chegar em todos, precisamos executar
+todas as linhas e todas as ramificações.

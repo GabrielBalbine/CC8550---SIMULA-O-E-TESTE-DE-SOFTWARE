@@ -1,0 +1,25 @@
+Arestas = 7
+Vértices = 6
+Complexidade: 7 - 6 + 2 = 3
+
+Caminho 1 (Barrado na idade): 1->4
+Caminho 2 (Barrado no membro): 1->2->4
+Caminho 3 (Aprovado): 1->2->3
+
+
+(CC)
+C1 - idade 20 e membro -> Permitido
+C2 - idade 20 e não membro -> Negado
+C3 - idade 15 e não membro -> Negado
+C4 - idade 15 e membro -> Negado
+
+(C1)
+C1 -> idade 20, membro = TRUE
+C2 -> idade 15, membro = TRUE
+
+Diferem, pois, na Cobertura de Condição, queremos testar
+todas as combinações possíveis, então, precisaríamos
+de 4 CTs. Porém, na Cobertura de Ramos (C1), bastam
+2 casos, pois o objetivo é "forçar" o bloco do if todo
+e avaliar como True ou False uma vez, ignorando o resto 
+das condições

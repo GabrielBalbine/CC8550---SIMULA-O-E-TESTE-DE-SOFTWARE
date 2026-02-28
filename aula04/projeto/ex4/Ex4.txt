@@ -1,0 +1,6 @@
+Arestas = 4
+Vértices = 4
+Complexidade: 4 - 4 + 2 = 2
+
+Caminho 1 (Sai do Loop): 1 -> 2 -> 4
+Caminho 2 (Entra no Loop): 1 -> 2 -> 3 -> 2 -> 4

@@ -1,0 +1,7 @@
+Arestas: 6
+Vértices: 5
+Complexidade: 6 - 5 + 2 = 3
+
+Caminho 1 (Matriz Vazia):  1-> Fim
+Caminho 2 (Entra no Externo, pula interno): 1->2->1->Fim
+Caminho 3 (Mergulha no print): 1->2->3->2->1->Fim

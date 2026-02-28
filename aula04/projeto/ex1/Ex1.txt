@@ -1,0 +1,9 @@
+Arestas = 11
+Vértices = 9
+
+Complexidade: 11-9+2 = 4
+
+Caminho 1(Par positivo): 1->2->3->8
+Caminho 2(Ímpar Positivo): 1->2->4->8
+Caminho 3(Negativo): 1->5->6->8
+Caminho 4(Zero): 1->5->7->8
