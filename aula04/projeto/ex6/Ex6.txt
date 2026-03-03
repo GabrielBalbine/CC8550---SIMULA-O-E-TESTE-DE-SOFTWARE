@@ -1,8 +1,37 @@
-Complexidade = 6
+EXERCÍCIO 6: TESTE COMPLETO (INTEGRADOR)
 
-Caminho 1: 1 -> 2 -> 9 -> 11
-Caminho 2: 1 -> 2 -> 9 -> 10
-Caminho 3: 1 -> 2 -> 3 -> 4 -> 5 -> 2
-Caminho 4: 1-> 2-> 3-> 6 -> 7 -> 2
-Caminho 5: 1 -> 2 -> 3 -> 4 -> 6 -> 8 -> 2
-Caminho 6: 1 -> 2 -> 3 -> 6 -> 8 -> 2 
+1. Complexidade Ciclomática V(G)
+Temos 5 nós de decisão predicativos (o laço for, os 2 operadores do 'and', o elif e o if final).
+V(G) = 5 + 1 = 6.
+
+2. Caminhos Independentes (Baseado no Grafo de Fluxo)
+C1: 1 -> 2 -> 9 -> 11 
+C2: 1 -> 2 -> 9 -> 10 
+C3: 1 -> 2 -> 3 -> 4 -> 5 -> 2
+C4: 1 -> 2 -> 3 -> 6 -> 7 -> 2
+C5: 1 -> 2 -> 3 -> 4 -> 6 -> 8 -> 2
+C6: 1 -> 2 -> 3 -> 6 -> 8 -> 2
+
+3. Casos de Teste e Retornos Esperados
+A) Cobertura de Comandos (C0) e Ramos (C1):
+- CT1: numeros = [12, -1, 3] | Retorno: "Acima"
+- CT2: numeros = [-5] | Retorno: "Abaixo"
+
+B) Cobertura de Condição (n > 0 and n % 2 == 0):
+- CT3 (V e V): n = 4 | Retorno: "Abaixo"
+- CT4 (V e F): n = 3 | Retorno: "Abaixo" 
+- CT5 (F e Ignorado): n = -2 | Retorno: "Abaixo" 
+
+C) Comportamentos do Laço:
+- 0 iterações: numeros = [] | Retorno: "Abaixo"
+- 1 iteração: numeros = [4] | Retorno: "Abaixo"
+- Várias iterações: numeros = [4, 8, -1] | Retorno: "Acima"
+
+4. Fluxo de Dados: Pares Def-Uso da variável 'total'
+- Definições de total: Linha 2 (Def1), Linha 5 (Def2), Linha 8 (Def3).
+- Usos de total: Linha 5 (Uso1), Linha 8 (Uso2), Linha 11 (Uso3).
+
+Todos os pares a serem cobertos:
+Da Def1: (Def1, Uso1), (Def1, Uso2), (Def1, Uso3)
+Da Def2: (Def2, Uso1), (Def2, Uso2), (Def2, Uso3)
+Da Def3: (Def3, Uso1), (Def3, Uso2), (Def3, Uso3)

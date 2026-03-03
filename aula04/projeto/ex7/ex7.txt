@@ -1,0 +1,29 @@
+EXERCÍCIO 7: FLUXO DE DADOS
+
+1. Definições, Usos e Pares Def-Uso (du-pairs)
+Variáveis e suas linhas:
+- preco: Def(1). Usos(2, 4, 5)
+- cliente_vip: Def(1). Uso(3)
+- desconto: Def(4). Uso(5)
+- total: Defs(2, 5, 7). Usos(6, 8)
+
+Pares Def-Uso (Caminhos válidos sem sobrescrita):
+- preco: (1, 2), (1, 4), (1, 5)
+- cliente_vip: (1, 3)
+- desconto: (4, 5)
+- total: (2, 6), (2, 8), (5, 6), (5, 8), (7, 8)
+
+2. Casos de Teste (All-Defs e All-Uses)
+Para atingir All-Uses (que implicitamente cobre All-Defs), usamos 4 CTs:
+- CT1: preco=100, cliente_vip=False. (Cobre total 2->6 e 2->8)
+- CT2: preco=40, cliente_vip=False. (Cobre total 2->6 e 7->8)
+- CT3: preco=100, cliente_vip=True. (Cobre total 5->6 e 5->8)
+- CT4: preco=40, cliente_vip=True. (Cobre total 5->6 e 7->8)
+
+3. Par def-uso não coberto pela Cobertura de Ramos (C1)
+Sim, o par (5, 8) da variável "total" pode ficar de fora. 
+Justificativa: A Cobertura C1 pode ser atingida com apenas 2 testes: 
+1) VIP=True e Preco=40 (Cobre if VIP=True e if Total<50=True). 
+2) VIP=False e Preco=100 (Cobre if VIP=False e if Total<50=False). 
+Neste cenário de 100% C1, no teste 1, o "total" definido na linha 5 é sobrescrito na linha 7.
+Logo, a definição da linha 5 nunca chega ao uso da linha 8, deixando o par (5, 8) descoberto.
