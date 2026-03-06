@@ -1,0 +1,27 @@
+{
+    "tests_by_mangled_function_name": {
+        "sistema.x_calcular_total": [
+            "test_sistema.py::test_calcular_total"
+        ],
+        "sistema.x_tem_estoque": [
+            "test_sistema.py::test_tem_estoque"
+        ],
+        "sistema.x_aplicar_desconto": [
+            "test_sistema.py::test_aplicar_desconto"
+        ],
+        "sistema.x_frete_gratis": [
+            "test_sistema.py::test_frete_gratis"
+        ],
+        "sistema.x_calcular_lucro": [
+            "test_sistema.py::test_calcular_lucro"
+        ]
+    },
+    "duration_by_test": {
+        "test_sistema.py::test_calcular_total": 0.005346203999579302,
+        "test_sistema.py::test_tem_estoque": 0.0004234100006215158,
+        "test_sistema.py::test_aplicar_desconto": 0.00034707699978753226,
+        "test_sistema.py::test_frete_gratis": 0.00034613699881447246,
+        "test_sistema.py::test_calcular_lucro": 0.0003559830001904629
+    },
+    "stats_time": 0.46203499299999995
+}

@@ -1,0 +1,4 @@
+# file: /workspaces/CC8550---SIMULA-O-E-TESTE-DE-SOFTWARE/aula03/projeto/frete.py
+# hypothesis_version: 6.151.9
+
+[0.0, 1.0, 1.5, 2.0, 5.0, 10.0, 15.0, 25.0, 200.0, 'Destino inválido', 'internacional', 'mesma região', 'outra região']

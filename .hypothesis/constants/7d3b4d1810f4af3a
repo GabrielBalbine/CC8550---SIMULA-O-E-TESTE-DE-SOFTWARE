@@ -1,0 +1,4 @@
+# file: /workspaces/CC8550---SIMULA-O-E-TESTE-DE-SOFTWARE/aula_01/projeto/sistema_notas.py
+# hypothesis_version: 6.151.9
+
+[0.0, 5.0, 7.0, 'Aprovado', 'Lista vazia', 'Média inválida', 'Recuperacao', 'Reprovado', 'aprovados', 'maior', 'media', 'menor', 'recuperacao', 'reprovados']

@@ -1,0 +1,39 @@
+{
+    "exit_code_by_key": {
+        "sistema.x_calcular_total__mutmut_1": 1,
+        "sistema.x_tem_estoque__mutmut_1": 1,
+        "sistema.x_aplicar_desconto__mutmut_1": 1,
+        "sistema.x_aplicar_desconto__mutmut_2": 1,
+        "sistema.x_aplicar_desconto__mutmut_3": 1,
+        "sistema.x_aplicar_desconto__mutmut_4": 1,
+        "sistema.x_aplicar_desconto__mutmut_5": 1,
+        "sistema.x_frete_gratis__mutmut_1": 1,
+        "sistema.x_frete_gratis__mutmut_2": 1,
+        "sistema.x_calcular_lucro__mutmut_1": 1
+    },
+    "durations_by_key": {
+        "sistema.x_frete_gratis__mutmut_1": 0.148426,
+        "sistema.x_frete_gratis__mutmut_2": 0.100542,
+        "sistema.x_aplicar_desconto__mutmut_2": 0.124005,
+        "sistema.x_aplicar_desconto__mutmut_1": 0.123735,
+        "sistema.x_aplicar_desconto__mutmut_3": 0.109193,
+        "sistema.x_aplicar_desconto__mutmut_4": 0.216768,
+        "sistema.x_aplicar_desconto__mutmut_5": 0.168411,
+        "sistema.x_calcular_lucro__mutmut_1": 0.114195,
+        "sistema.x_tem_estoque__mutmut_1": 0.09597,
+        "sistema.x_calcular_total__mutmut_1": 0.076632
+    },
+    "type_check_error_by_key": {},
+    "estimated_durations_by_key": {
+        "sistema.x_frete_gratis__mutmut_1": 0.00034613699881447246,
+        "sistema.x_frete_gratis__mutmut_2": 0.00034613699881447246,
+        "sistema.x_aplicar_desconto__mutmut_1": 0.00034707699978753226,
+        "sistema.x_aplicar_desconto__mutmut_2": 0.00034707699978753226,
+        "sistema.x_aplicar_desconto__mutmut_3": 0.00034707699978753226,
+        "sistema.x_aplicar_desconto__mutmut_4": 0.00034707699978753226,
+        "sistema.x_aplicar_desconto__mutmut_5": 0.00034707699978753226,
+        "sistema.x_calcular_lucro__mutmut_1": 0.0003559830001904629,
+        "sistema.x_tem_estoque__mutmut_1": 0.0004234100006215158,
+        "sistema.x_calcular_total__mutmut_1": 0.005346203999579302
+    }
+}
