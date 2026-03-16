@@ -1,0 +1,28 @@
+{
+    "exit_code_by_key": {
+        "sistema_mutante.x_calcular_total__mutmut_1": null,
+        "sistema_mutante.x_tem_estoque__mutmut_1": null,
+        "sistema_mutante.x_aplicar_desconto__mutmut_1": null,
+        "sistema_mutante.x_aplicar_desconto__mutmut_2": null,
+        "sistema_mutante.x_aplicar_desconto__mutmut_3": null,
+        "sistema_mutante.x_aplicar_desconto__mutmut_4": null,
+        "sistema_mutante.x_aplicar_desconto__mutmut_5": null,
+        "sistema_mutante.x_frete_gratis__mutmut_1": null,
+        "sistema_mutante.x_frete_gratis__mutmut_2": null,
+        "sistema_mutante.x_calcular_lucro__mutmut_1": null
+    },
+    "durations_by_key": {},
+    "type_check_error_by_key": {},
+    "estimated_durations_by_key": {
+        "sistema_mutante.x_calcular_total__mutmut_1": 0,
+        "sistema_mutante.x_tem_estoque__mutmut_1": 0,
+        "sistema_mutante.x_aplicar_desconto__mutmut_1": 0,
+        "sistema_mutante.x_aplicar_desconto__mutmut_2": 0,
+        "sistema_mutante.x_aplicar_desconto__mutmut_3": 0,
+        "sistema_mutante.x_aplicar_desconto__mutmut_4": 0,
+        "sistema_mutante.x_aplicar_desconto__mutmut_5": 0,
+        "sistema_mutante.x_frete_gratis__mutmut_1": 0,
+        "sistema_mutante.x_frete_gratis__mutmut_2": 0,
+        "sistema_mutante.x_calcular_lucro__mutmut_1": 0
+    }
+}

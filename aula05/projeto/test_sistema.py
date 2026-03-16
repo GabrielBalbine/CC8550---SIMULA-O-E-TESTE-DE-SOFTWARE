@@ -1,5 +1,5 @@
 import pytest
-from sistema import calcular_total, tem_estoque, aplicar_desconto, frete_gratis, calcular_lucro
+from sistema_mutante import calcular_total, tem_estoque, aplicar_desconto, frete_gratis, calcular_lucro
 
 # 1. Testes para calcular_total (Gera 4 testes)
 @pytest.mark.parametrize("preco, quantidade, esperado", [
