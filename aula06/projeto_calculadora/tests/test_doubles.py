@@ -3,7 +3,6 @@ from unittest.mock import MagicMock
 import sys
 import os
 
-# Ajuste no path para importar da pasta src
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.calculadora import Calculadora
 
@@ -13,7 +12,6 @@ class TestComStub(unittest.TestCase):
         self.calc = Calculadora(self.stub_repo)
 
     def test_soma_stub_repositorio(self):
-        # stub: salvar() nao faz nada de verdade
         resultado = self.calc.somar(10, 5)
         self.assertEqual(resultado, 15)
 
@@ -65,8 +63,7 @@ class TestComMock(unittest.TestCase):
     # --- Tarefa 2 e 3: Detectar e validar a correção do bug em potencia ---
     def test_mock_detecta_bug_potencia(self):
         self.calc.potencia(2, 3)
-        # O mock verifica se a string enviada pro BD estava certa.
-        # Como nós já corrigimos o código no começo (trocando pra **), esse teste vai PASSAR!
+        # Como já corrigi o código no começo (trocando pra **), esse teste vai PASSAR!
         self.mock_repo.salvar.assert_called_with("2 ** 3 = 8")
 
 if __name__ == '__main__':

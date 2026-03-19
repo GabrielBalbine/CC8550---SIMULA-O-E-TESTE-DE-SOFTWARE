@@ -9,7 +9,6 @@ from src.repositorio import HistoricoRepositorio
 
 class TestIntegracao(unittest.TestCase):
     def setUp(self):
-        # Repositório REAL sendo instanciado
         self.repo = HistoricoRepositorio()
         self.calc = Calculadora(self.repo)
 

@@ -62,7 +62,7 @@ class TestUnidadeCalculadora(unittest.TestCase):
     def test_limite_float_grande(self):
         grande = sys.float_info.max / 2
         resultado = self.calc.somar(grande, grande)
-        self.assertFalse(resultado == float('inf')) # nao deve transbordar
+        self.assertFalse(resultado == float('inf'))
 
     def test_limite_divisor_muito_pequeno(self):
         self.assertAlmostEqual(self.calc.dividir(1, 1e-10), 1e10)
